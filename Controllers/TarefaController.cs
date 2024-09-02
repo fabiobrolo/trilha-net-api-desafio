@@ -78,7 +78,7 @@ namespace TrilhaApiDesafio.Controllers
             if (tarefa.Data == DateTime.MinValue)
                 return BadRequest(new { Erro = "A data da tarefa nao pode ser vazia" });
 
-            tarefaBanco.Id = tarefa.Id;   
+            //tarefaBanco.Id = tarefa.Id;   
             tarefaBanco.Titulo = tarefa.Titulo;   
             tarefaBanco.Descricao = tarefa.Descricao;   
             tarefaBanco.Data = tarefa.Data;  
